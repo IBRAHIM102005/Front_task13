@@ -1,10 +1,8 @@
-
 h1{
     font-size: 2rem;
 }.navbar{
     margin: 0 9%;
     padding: 1.5rem 0;
-    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -47,12 +45,10 @@ h1{
    background-color: #ffc451;
 }
 .dropdown:hover ,.dropdownHover:hover {
-    
     .dropdownHover{
         visibility: visible;
         opacity: 1;
         transform: translateY(-3rem);} 
-    
 }
 .deepDropdown-hover{
     visibility: hidden;
@@ -104,9 +100,12 @@ button:hover{
     margin: 0;
     text-align: center;
     position: relative;
-    overflow: hidden;
+    overflow: hidden;   
 }
-.firstSectionDiv::before {
+.firstSectionDiv img{
+    filter: brightness(30%);
+}
+/* .firstSectionDiv::before {
     content: "";
     position: absolute;
     top: 0;
@@ -114,16 +113,16 @@ button:hover{
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5); 
-}
+} */
 img{
     height: 100%;
     width: 100%;
+    object-fit: cover;
 }
 .bi-chevron-down{
     font-size: 0.8rem;
 }
 .firstWrapper{
-    display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -133,6 +132,7 @@ img{
     padding: 0 5rem ;
     font-size: 3.5rem;
     font-weight: 700;
+    line-height: 4.4rem;
     /* width: 50rem; */
 }
 .firstSectionDiv  p{
@@ -141,7 +141,6 @@ img{
     font-weight: 500;
 }
 .choise{
-    display: flex;
     row-gap: 2rem;
     justify-content: center;
     margin: 5rem 6% 0 6%;
@@ -166,7 +165,7 @@ img{
     font-weight: 500;
 }
 .secondSection{
-    scroll-margin-top: 9.6rem; 
+    scroll-margin-top: 10.5rem; 
 }
 article{
     scroll-margin-top: 2rem; 
@@ -175,13 +174,11 @@ article{
     scroll-margin-top:7rem ;
 }
 .row{
-    display: flex;
     flex-wrap: wrap;
     justify-content: start;
     margin-top: 5rem;
 }
 .articleRow{
-    display: flex;
     justify-content: start;
     margin-top: 5rem;
 }
@@ -193,12 +190,10 @@ h3{
     color:  #727272;
 }
 .thirdSectionInfo{
-    display: flex;
     flex-direction:column ;
     gap: 3rem;
 }
 .thirdsectionData{
-    display: flex;
     gap: 1rem;
 }
 .col-6 h4{
@@ -216,16 +211,12 @@ h4 + p{
 }
 .adsDiv{
     padding-right: 3rem ;
-    
-   
 }
 .scroll{
     overflow-x: scroll;
     background: transparent;
-    
 }
 .scroll::-webkit-scrollbar {
-    
     width: 0px;
 }
 .adsDiv >img{
